@@ -1,0 +1,35 @@
+name: Validate skill
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Compile scripts
+        run: python -m compileall -q skill/rigorous-ai-research-coding/scripts
+
+      - name: Run deterministic tests
+        run: python tests/test_skill_scripts.py
+
+      - name: Verify manual-only activation
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          text = Path(
+              "skill/rigorous-ai-research-coding/agents/openai.yaml"
+          ).read_text()
+          assert "allow_implicit_invocation: false" in text
+          assert "$rigorous-ai-research-coding" in text
+          PY
