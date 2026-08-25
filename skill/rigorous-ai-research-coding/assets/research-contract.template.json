@@ -1,0 +1,34 @@
+{
+  "contract_version": "1.0",
+  "project_id": "PROJECT-ID",
+  "research_question": "State the research question.",
+  "hypotheses": ["State prespecified hypotheses."],
+  "scope": {
+    "target_population": "Define the intended population or deployment setting.",
+    "in_scope": [],
+    "out_of_scope": []
+  },
+  "data": {
+    "unit_of_independence": "subject|sample|site|document|trajectory|time-block",
+    "inclusion_rules": [],
+    "exclusion_rules": [],
+    "split_policy": "Define train, validation, and protected-test allocation.",
+    "protected_test": true
+  },
+  "comparison": {
+    "baselines": [],
+    "primary_metric": "PRIMARY_METRIC",
+    "secondary_metrics": [],
+    "minimum_meaningful_effect": null,
+    "resource_budget": {}
+  },
+  "analysis": {
+    "estimand": "Define the target quantity.",
+    "evaluation_unit": "Define the independent evaluation unit.",
+    "uncertainty_method": "Prespecify an appropriate method.",
+    "multiplicity_plan": "State the confirmatory comparison family.",
+    "decision_rules": []
+  },
+  "frozen_at": "YYYY-MM-DDTHH:MM:SSZ",
+  "approved_by": "HUMAN-RESEARCHER"
+}

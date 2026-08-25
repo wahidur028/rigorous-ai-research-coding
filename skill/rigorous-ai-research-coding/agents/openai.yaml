@@ -1,0 +1,14 @@
+interface:
+  display_name: Rigorous AI Research Coding
+  short_description: Evidence-first Python research engineering
+  default_prompt: Use $rigorous-ai-research-coding to implement and validate this
+    research code without changing the approved scientific design.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  allow_implicit_invocation: false
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas

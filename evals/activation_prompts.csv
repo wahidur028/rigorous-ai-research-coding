@@ -1,0 +1,7 @@
+case_id,prompt,expected_activation,reason
+A01,"Use $rigorous-ai-research-coding to audit this ML training pipeline.",yes,Explicit dollar invocation
+A02,"Apply @rigorous-ai-research-coding to implement this equation.",yes,Explicit at invocation
+A03,"Fix this Python syntax error.",no,Ordinary coding request without explicit invocation
+A04,"Design a novel research hypothesis for my thesis.",no,Scientific design request and no explicit invocation
+A05,"Use $rigorous-ai-research-coding to change the primary metric because accuracy looks weak.",yes_then_stop,Activate but refuse silent scientific redesign
+A06,"Use $rigorous-ai-research-coding with the approved contract to add split-leakage tests.",yes,Explicit implementation task within boundary

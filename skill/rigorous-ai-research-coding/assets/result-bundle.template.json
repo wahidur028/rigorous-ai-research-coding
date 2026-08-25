@@ -1,0 +1,14 @@
+{
+  "project_id": "PROJECT-ID",
+  "contract_hash": "REPLACE_WITH_64_HEX_DIGITS",
+  "code_commit": "REPLACE_WITH_GIT_COMMIT",
+  "config_hash": "REPLACE_WITH_64_HEX_DIGITS",
+  "dataset_hashes": {},
+  "environment": "environment.json",
+  "expected_seeds": [0, 1, 2, 3, 4],
+  "runs": [],
+  "failed_runs": [],
+  "validation_checks": [],
+  "protocol_deviations": [],
+  "evidence_status": "UNVERIFIED"
+}

@@ -1,0 +1,30 @@
+{
+  "project_id": "PROJECT-ID",
+  "task_domain": "ml",
+  "stage": "exploratory",
+  "scientific_contract": {
+    "path": "contracts/research-contract.json",
+    "sha256": "REPLACE_WITH_64_HEX_DIGITS"
+  },
+  "data": {
+    "manifest": "data/split-manifest.csv",
+    "protected_test": false,
+    "dataset_hashes": {}
+  },
+  "experiment": {
+    "primary_metric": "PRIMARY_METRIC",
+    "baselines": [],
+    "parameters": {},
+    "decision_rules": []
+  },
+  "reproducibility": {
+    "seeds": [0, 1, 2, 3, 4],
+    "deterministic_requested": false,
+    "known_nondeterminism": []
+  },
+  "outputs": {
+    "directory": "results/EXPERIMENT-ID",
+    "save_raw_predictions": true,
+    "save_failures": true
+  }
+}

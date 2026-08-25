@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this skill, please cite it as below."
+title: "Rigorous AI Research Coding"
+type: software
+authors:
+  - family-names: "Rahman"
+    given-names: "S. M. Wahidur"
+version: "0.1.0-beta"
+date-released: "2026-08-25"
+repository-code: "https://github.com/wahidur028/rigorous-ai-research-coding"
+url: "https://github.com/wahidur028/rigorous-ai-research-coding"
+license: MIT
+abstract: >-
+  A manually invoked, evidence-first ChatGPT/Codex skill for trustworthy
+  Python research engineering across ML/DL, generative AI, time series,
+  and reinforcement learning.
